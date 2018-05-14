@@ -1,0 +1,14 @@
+.authForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+h3 {
+  text-transform: capitalize;
+}
+.error {
+  text-transform: uppercase;
+  color: red;
+  display: flex;
+  align-self: center;
+}

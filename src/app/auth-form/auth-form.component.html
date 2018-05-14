@@ -1,0 +1,15 @@
+<div class="auth-form">
+  <h3>{{ title }}</h3>
+  <form [formGroup]="authForm" class="authForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!showStatus">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" class="form-control" formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" class="form-control" formControlName="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary">ACCEPT</button>
+    <span *ngIf="showError" class="error">{{ error }}</span>
+  </form>
+
+  <span *ngIf="showStatus">{{ status }}</span>
+</div>
