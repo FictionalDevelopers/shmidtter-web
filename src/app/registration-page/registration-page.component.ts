@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registration-page.component.css'],
 })
 export class RegistrationPageComponent implements OnInit {
-  private title = 'registration';
-  private url = '/api/auth/register';
+  private authType = 'registration';
+  private authAction = '/api/auth/register';
 
   constructor() {}
 

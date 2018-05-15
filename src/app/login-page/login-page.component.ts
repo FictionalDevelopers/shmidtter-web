@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
-  private title = 'login';
-  private url = '/api/auth/login';
+  private authType = 'login';
+  private authAction = '/api/auth/login';
 
   constructor() {}
 

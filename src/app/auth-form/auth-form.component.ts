@@ -36,7 +36,7 @@ export class AuthFormComponent implements OnInit {
   onSubmit() {
     const body = this.authForm.value;
     const headers = new Headers({ 'Content-type': 'application/json' });
-    const options = new RequestOptions({ headers: headers });
+    const options = new RequestOptions({ headers });
 
     this.http.post(this.url, body, options).subscribe(
       data => {
